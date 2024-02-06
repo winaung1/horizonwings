@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import { Sidebar } from "./components/Sidebar";
+import { Nav } from "./components/Nav";
+import { Banner } from "./components/Banner";
+import { About } from "./components/About";
+import { Connect } from "./components/Connect";
+import { DronesBuy } from "./components/DronesBuy";
+import { DroneProject } from "./components/DroneProject";
+import { Subscribe } from "./components/Subscribe";
+import { Map } from "./components/Map";
+import { Footer } from "./components/Footer";
 
+export const AppContextProvider = createContext()
 function App() {
+
+  const [showSideBar, setShowSideBar] = useState(false)
+
+  const values = {setShowSideBar, showSideBar}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContextProvider.Provider value={values}>
+      <div>
+        <Nav/>
+        <Banner/>
+        <About/>
+        <Connect/>
+        <DronesBuy/>
+        <DroneProject/>
+        <Subscribe/>
+        <Map/>
+        <Footer/>
+        <Sidebar/>
+      </div>
+    </AppContextProvider.Provider>
   );
 }
 
