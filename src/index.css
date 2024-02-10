@@ -4,10 +4,132 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    /* background-color: black;
+    color: white; */
 }
 
-.banner{
-    background: rgb(0,0,0);
-background: linear-gradient(99deg, rgba(0,0,0,1) 38%, rgba(96,95,95,0.9010197829131653) 100%);
+/* .banner{
+  
+  background: rgb(0,0,0);
+  background: linear-gradient(99deg, rgba(0,0,0,1) 38%, rgba(96,95,95,0.9010197829131653) 100%);
+} */
+.A{
+  width: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(99deg, rgba(0,0,0,1) 38%, rgba(96,95,95,0.9010197829131653) 100%);
 
 }
+
+  
+  /* Caption text */
+  .text1 {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .text2 {
+
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .text3 {
+
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text4 {
+    position: absolute;
+    top:  140px;
+    /* background-color: blue; */
+    width: 100%;
+  }
+  
+  /* Number text (1/3 etc) */
+  
+  
+  /* The dots/bullets/indicators */
+  
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  .updown {
+    animation-name: updown;
+    animation-duration: 1.5s;
+  }
+  
+  .updown2 {
+    animation-name: updown2;
+    animation-duration: 1.5s;
+  }
+  
+  .updown3 {
+    animation-name: updown3;
+    animation-duration: 1.5s;
+  }
+  
+  .updown4 {
+    animation-name: updown4;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes updown {
+  
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: 0px;;
+    }
+   
+  }
+  @keyframes updown2 {
+  
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: 25px;;
+    }
+   
+  }
+  @keyframes updown3 {
+  
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: 100px;;
+    }
+   
+  }
+  @keyframes updown4 {
+  
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: 140px;;
+    }
+   
+  }
+  
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  

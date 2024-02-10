@@ -14,7 +14,7 @@ export const DronesBuyCard = ({bg}) => {
           <h3 className='font-bold text-xl'>$240</h3>
         </div>
         <div>
-          <BsCart className='bg-blue text-white w-20 h-8 p-2 rounded-xl text-4xl lg:translate-y-32'/>
+          <BsCart className='bg-[#219AB3] text-white w-20 h-8 p-2 rounded-xl text-4xl lg:translate-y-32'/>
         </div>
       </div>
     </div>

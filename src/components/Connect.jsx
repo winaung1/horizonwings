@@ -22,7 +22,7 @@ export const Connect = () => {
           })}
 
           {items.filter(item => item.id === 3).map(item => {
-            return <div key={item.id} className='bg-blue text-white text-center rounded-xl h-40 w-full p-2 flex items-center justify-center flex-col'>
+            return <div key={item.id} className='bg-[#219AB3] text-white text-center rounded-xl h-40 w-full p-2 flex items-center justify-center flex-col'>
               <div className='text-4xl'>{item.icon}</div>
               <p className='text-xl py-3'>{item.name}</p>
             </div>

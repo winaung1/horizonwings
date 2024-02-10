@@ -19,11 +19,11 @@ export const Nav = () => {
   })
 
   return (
-    <div className={scrolled ? 'backdrop-blur-2xl z-[1000] fixed w-full py-4 top-0 transition-all duration-300 ease-linear bg-black/60' : ' z-[1000] fixed w-full py-4 top-0 transition-all duration-300 ease-linear bg-transparent'}>
+    <div className={scrolled ? 'backdrop-blur-2xl z-[1000] fixed w-full py-4 top-0 transition-all duration-300 ease-linear bg-black/60' : ' z-[1000] fixed w-full py-4 bg-transparent transition-all duration-300 ease-linear'}>
       <div className='max-w-7xl px-5 mx-auto text-white flex items-center justify-between'>
         <div className='logo flex flex-col items-center'>
-          <img className='w-40 h-10 object-cover' src={logo} alt="" />
-          <h1 className='text-2xl font-bold tracking-wider font-[rowdies]'>Horizon Wings</h1>
+          {/* <img className='w-10 h-10 object-cover' src={logo} alt="" /> */}
+          <h1 className='text-xl font-bold tracking-wider font-[rowdies]'>Horizon Wings</h1>
         </div>
         <ul className='hidden md:flex items-center space-x-5 text-xl'>
           <li className='hover:text-blue cursor-pointer'>Home</li>
