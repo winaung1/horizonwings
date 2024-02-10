@@ -2,18 +2,18 @@ import React, { useState } from 'react'
 import { Button } from '../Button'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 export const BannerImageRender = ({slide, currentIndex}) => {
-
     const styleImg = {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         width: '100%',
         height: '100vh',
         backgroundImage: `url(${slide.url})`,
+        // transform: `translateX(-${currentIndex * 100}%)`,
         zIndex: '1000px'
     }
   return (
-    <div style={styleImg} className='fade relative -translate-y-20'>
-        <div className='w-full z-[1000] h-screen bg-black/60'></div>
+    <div style={styleImg} className={`relative -translate-y-20 transition-transform duration-500 ease-out`}>
+    <div className='w-full z-[1000] h-screen bg-black/60'></div>
     <div className='z-[2000] absolute w-full top-40 left-0'>
       <div className=''>
         <h1 className='text1 updown'>{slide.p}</h1>
@@ -25,8 +25,6 @@ export const BannerImageRender = ({slide, currentIndex}) => {
         <Button name={'See More'} bgcolor={'bg-transparent'} textcolor={'text-white border border-gray'}/>
       </div>
     </div>
-    {/* <img className='pt-60 transition-all duration-200 mx-auto' src={slide.url} alt="" /> */}
-    
   </div>
 
   )

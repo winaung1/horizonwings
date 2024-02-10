@@ -11,6 +11,7 @@ import { Map } from "./components/Map";
 import { Footer } from "./components/Footer";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 export const AppContextProvider = createContext()
 function App() {
 
