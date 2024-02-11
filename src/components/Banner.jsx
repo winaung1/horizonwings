@@ -6,7 +6,7 @@ import { CarouselSection } from './CarouselSection'
 
 export const Banner = () => {
   return (
-    <div className='banner min-h-screen flex py-20'>
+    <div className='banner flex py-20'>
       <CarouselSection/>
     </div>
   )

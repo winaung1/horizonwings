@@ -5,7 +5,8 @@ import img1 from '../images/purepng 2.png'
 import img2 from '../images/bannerdrone.png'
 import img3 from '../images/bannerdrone3.png'
 import { BannerImageRender } from './BannerImageRender';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { FaArrowDown, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 
 import 'animate.css';
@@ -34,8 +35,9 @@ const [currentIndex, setCurrentIndex] = useState(0)
 
 
   return (
-    <div className='w-full text-white -translate-y-20 h-screen' style={{color: 'white'}} >
-    <Carousel data-bs-theme="dark " className='' controls={false} indicators={false}>
+    <div className='relative w-full text-white -translate-y-20 h-[screen]' style={{color: 'white'}} >
+    <MdKeyboardDoubleArrowDown  onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })} className='text-gray-500 animate__animated animate__backInDown text-4xl font-bold hover:text-white absolute z-[4000] bottom-10 w-full mx-auto my-auto cursor-pointer'/>
+    <Carousel data-bs-theme="dark " className='' controls={false} indicators={true}>
       <Carousel.Item >
       <div className='w-full absolute z-[1000] h-full bg-black/60'></div>
         <img
@@ -75,7 +77,7 @@ const [currentIndex, setCurrentIndex] = useState(0)
           <div className={`text4 updown4 flex justify-center space-x-4 my-4`}>
             <Button name={'Order Now'} bgcolor={'bg-[#219AB3]'} textcolor={'text-white'}/>
             <Button name={'See More'} bgcolor={'bg-transparent'} textcolor={'text-white border border-gray'}/>
-          </div>∏
+          </div>
         </div>
         </Carousel.Caption>
       </Carousel.Item>

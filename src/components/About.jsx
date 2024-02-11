@@ -2,7 +2,7 @@ import React from 'react'
 import img2 from '../images/mission.jpeg'
 export const About = () => {
   return (
-    <div className='px-8 py-10 max-w-7xl mx-auto md:flex md:space-x-8 2xl:px-0 items-center justify-center '>
+    <div className='px-8 -translate-y-20 max-w-7xl mx-auto md:flex md:space-x-8 2xl:px-0 items-center justify-center '>
       <img className='hidden md:block w-full object-cover lg:w-[400px] h-[400px] rounded-bl-[40px] rounded-tr-[40px]' src={img2} alt="" />
       <div className='lg:px-10'>
         <h1 className='text-5xl'>Horizon Wings Mission</h1>

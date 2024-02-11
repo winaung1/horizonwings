@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import { Sidebar } from "./components/Sidebar";
 import { Nav } from "./components/Nav";
 import { Banner } from "./components/Banner";
@@ -14,13 +14,15 @@ import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 export const AppContextProvider = createContext()
 function App() {
+  const myRef = useRef(null)
 
+  const executeScroll = () => myRef.current.scrollIntoView()   
   const [showSideBar, setShowSideBar] = useState(false)
   useEffect(() => {
     Aos.init();
     Aos.refresh();
   }, [])
-  const values = {setShowSideBar, showSideBar}
+  const values = {setShowSideBar, showSideBar, myRef, executeScroll}
   return (
     <AppContextProvider.Provider value={values}>
       <div>
